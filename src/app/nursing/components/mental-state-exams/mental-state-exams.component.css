@@ -1,0 +1,84 @@
+/* Contenedor de las tarjetas (grid layout) */
+.exam-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.exam-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.exam-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del paciente */
+.patient-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* Detalles del examen */
+.exam-details {
+  width: 100%;
+  text-align: center;
+}
+
+/* Puntajes individuales */
+.scores {
+  margin-top: 10px;
+}
+
+.scores p {
+  margin: 4px 0;
+}
+
+/* Títulos y textos */
+h3 {
+  font-size: 1.4em;
+  margin: 0;
+  color: #333;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 8px 0;
+  color: #555;
+}
+
+h1{
+  margin-top:100px;
+}
+
+p {
+  font-size: 1em;
+  margin: 4px 0;
+  color: #666;
+}
+
+p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
